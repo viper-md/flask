@@ -1,0 +1,38 @@
+<! DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+	<title>flask app </title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">flask app</h1>
+			<strong><nav>
+				<ul class="menu">
+				<li><a href="{{url_for('home')}}">home</li>
+				<li><a href="{{url_for('about')}}">about</li>
+				<li><a href="{{url_for('contact')}}">contact</a></li>
+				<html>
+				<head>
+					<title></title>
+				</head>
+				<body>
+				
+				</body>
+				</html>"></li>
+				</a>
+				</li>
+				</a>
+				</li>
+				</ul>
+			</nav></strong>
+		</div>
+	</header>
+	<div class="container">
+		{% block content %}
+		{% endblock%}
+	</div>
+
+</body>
+</html>
